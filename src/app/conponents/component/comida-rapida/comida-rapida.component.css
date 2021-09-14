@@ -1,0 +1,32 @@
+.comR{
+    margin-top: 50px;
+    display: flex;
+    border: rgb(0, 97, 243) solid;
+    height: 500px;
+    flex-direction: row;
+}
+.nombre{
+    width: 50%;
+    border: rgb(0, 97, 243) solid;
+}
+.nombre h1{
+    text-align: center;
+}
+.comidas{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    width: 100%;
+}
+.imgMenu{
+    width: 175px;
+    height: 95px;
+    padding-left: 30px;
+    padding-top: 40px;
+}
+.carusel{
+    border: rgb(0, 97, 243) solid;
+    width: 50%;  
+}
+.img2{
+    height: 400px;
+}

@@ -1,0 +1,18 @@
+<div class="container">
+    <div class="cover">
+        <div class="title">
+        <h1 class="title__h1">
+            Sabor Gourmet
+        </h1>
+        <a routerLink="/Comida"> <button class="title__button" type="button">Ver menú</button></a>
+        </div>
+        <div class="txt">
+        <span #par id="spanAux">
+           <p class="txt__p" [ngClass]="{'limitTextHeight': isReadMore}">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores, deleniti ex porro, facilis voluptas autem accusantium velit delectus possimus at nostrum quisquam veniam voluptates suscipit sequi accusamus illo. Laboriosam eum rerum ut odit hic optio rem sapiente numquam? Cupiditate, corrupti? Quibusdam voluptatem veniam nesciunt doloribus corrupti minima amet nostrum, minus harum, alias ullam magni! Neque illo cupiditate sit fugiat praesentium!</p>
+        </span>
+        <button type="button" (click)="showText()">
+            {{ isReadMore ? 'Ver más': 'Ver menos' }}
+          </button>
+        </div>
+    </div>
+</div>

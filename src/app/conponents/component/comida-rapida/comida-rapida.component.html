@@ -1,0 +1,39 @@
+
+<div class="comR">
+    <div class="nombre">
+        <h1>Comidas Rápidas</h1>
+        <div class="comidas">
+
+
+            <img src="assets/Comidas/comidasRapidas/hamburguesa.png" alt="Imagen de hamburguesa" class="imgMenu">
+
+            <img src="assets/Comidas/comidasRapidas/papas.jpg" alt="Imagen de papas fritas" class="imgMenu">
+
+            <img src="assets/Comidas/comidasRapidas/pescado.jpg" alt="Imagen de dedos de pescado" class="imgMenu">
+
+            <img src="assets/Comidas/comidasRapidas/pizza.png" alt="Imagen de pizza" class="imgMenu">
+
+            <img src="assets/Comidas/comidasRapidas/pollo.jpg" alt="Imagen de pollo frito" class="imgMenu">
+
+            <img src="assets/Comidas/comidasRapidas/tacos.jpg" alt="Imagen de tacos" class="imgMenu">
+
+        </div>
+    </div>
+    <div class="carusel">
+        <owl-carousel-o [options]="customOptions">
+            <ng-container *ngFor="let slide of dynamicSlides">
+              <ng-template carouselSlide [id]="slide.id">
+                <img class="img2" [src]="slide.src" [alt]="slide.alt" >
+                <h2>{{slide.title}}</h2>
+                <p>{{slide.description}}</p>
+              </ng-template>
+            </ng-container>
+          </owl-carousel-o> 
+
+    </div>
+    
+</div>
+<div class="botones">
+        <a routerLink="''"><button type="button">Atras</button></a>
+        <a routerLink="/Bebidas"><button type="button">Adelante</button></a>
+</div>
